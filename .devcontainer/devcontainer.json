@@ -1,0 +1,12 @@
+{
+  "name": "Orkom BufferOverflow",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/gdb:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y build-essential gdb python3-pip file && pip3 install pwntools"
+}
